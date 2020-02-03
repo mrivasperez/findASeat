@@ -21,7 +21,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #050c01;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     color: white;
@@ -48,17 +48,19 @@ body {
 }
 
 .container {
-    perspective: 1000px;
+    perspective: 800px;
     margin-bottom: 30px;
 }
 
+
 .seat {
     background-color: #444451;
-    height: 12px;
-    width: 15px;
+    height: 17px;
+    width: 19px;
     margin: 3px;
     border-top-left-radius: 155px;
     border-top-right-radius: 155px;
+    perspective: 10px;
 }
 
 .seat:not(.occupied):hover {
@@ -72,10 +74,9 @@ body {
 }
 
 .showcase {
-    background-color: rgba(0 , 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.15);
     padding: 5px 10px;
     border-radius: 5px;
-    color: #777;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
